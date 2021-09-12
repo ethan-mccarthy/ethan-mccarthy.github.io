@@ -1,127 +1,332 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ethan McCarthy</title>
 
-    <head>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/features.css" rel="stylesheet">
 
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-        <title>ethanm.cc</title>
-        <meta name="description" content="">
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-        <!-- The compiled CSS file -->
-        <link rel="stylesheet" href="css/production.css">
+      @font-face {
+          font-family: 'Source Sans Pro';
+          src: url(SourceSansPro-ExtraLight.ttf);
+      }
+    </style>
 
-        <!-- Web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
-
-        <!-- favicon.ico. Place these in the root directory. -->
-        <link rel="shortcut icon" href="favicon.ico">
-
-        <style>
-			a:link {
-			  color: black; 
-			  background-color: transparent; 
-			  text-decoration: none;
-			}
-
-			a:visited {
-			  color: black;
-			  background-color: transparent;
-			  text-decoration: none;
-			}
-
-			a:hover {
-			  color: gray;
-			  background-color: transparent;
-			  text-decoration: underline;
-			}
-
-			img {
-				padding-bottom: 10px;
-			}
-		</style>
-
-    </head>
-
-    <body class="has-animations">
+    
+  </head>
 
 
-    <!-- Create outer border -->
-    <div class="page-border">
-    <div class="bg--white">
+  <body>
 
-        <!-- Header -->
-        <header class="align--center pt3 pb2">
-            <div class="container">
-                <h2 class="mb3 reveal-on-scroll is-revealing">Ethan McCarthy</h2>
-                <p>Los Angeles, CA</p>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </symbol>
+
+      <symbol id="newspaper" viewBox="0 0 16 16">
+        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+        <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+      </symbol>
+
+      <symbol id="bar-chart" viewBox="0 0 16 16">
+        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+      </symbol>
+
+      <symbol id="speedometer" viewBox="0 0 16 16">
+        <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+        <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+      </symbol>
+
+      <symbol id="medical-doc" viewBox="0 0 16 16">
+        <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+      </symbol>
+
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+
+      <symbol id="github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </symbol>
+
+      <symbol id="linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </symbol>
+
+      <symbol id="envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+      </symbol>
+    </svg>
+
+    <main>
+
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light" id="name-heading" style="font-family: 'Source Sans Pro' !important;"></h1>
+            <p class="lead text-muted">I'm an undergraduate researcher interested in microbiology and immunology. I've leveraged my passion for computer programming to analyze research data, develop productivity tools, and build hobby projects showcased here.</p>
+            <p>
+              <a href="mailto:ethanmc@ucla.edu" class="btn btn-outline-primary my-2">Contact Me</a>
+              <a href="https://github.com/ethan-mccarthy" class="btn btn-outline-secondary my-2">Github</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+
+          <div class="container px-4 py-5" id="featured-3">
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+              <div class="feature-icon bg-primary bg-gradient">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#newspaper"/></svg>
+              </div>
+              <h2>avis</h2>
+              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              <a href="#" class="icon-link">
+                Learn more
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+              </a>
             </div>
-        </header>
+            <div class="feature col">
+              <div class="feature-icon bg-primary bg-gradient">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#bar-chart"/></svg>
+              </div>
+              <h2>scGUI</h2>
+              <p>Easily browse single cell RNA sequencing data using a Shiny web app</p>
+              <a href="https://ethanmc.shinyapps.io/scgui" class="icon-link">
+                Go to application
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon bg-primary bg-gradient">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#medical-doc"/></svg>
+              </div>
+              <h2>powerQI</h2>
+              <p>Implement data-driven quality improvement for EMS providers</p>
+              <a href="https://powerqi.ethanm.cc/" class="icon-link">
+                Go to application
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+          </div>
 
-        <!-- Body -->
-        <main>
-            <div class="container">
+          <hr>
 
-                <!-- Info -->
-                <section class="pt2 pb3">                    
-                    <p>I'm an undergraduate researcher in the Maureen Su lab at UCLA. I also work as an EMT for the on-campus ambulance company, UCLA EMS. I like to code and wanted to share some of my projects here!</p>
-                     
-                </section>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+              <div class="feature-icon bg-primary bg-gradient">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#speedometer"/></svg>
+              </div>
+              <h2>EMS Dashboard</h2>
+              <p>Display relevent shift information to employees with a low-power E-ink display</p>
+              <a href="https://github.com/ethan-mccarthy/EMS-Display" class="icon-link">
+                Learn more
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-                
-                <hr>
+          <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col col-sm">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-                <!-- Projects -->
-                <section class="pt2 pb3">
-                    <h3 class="align--center mb2">My Projects</h3>
-                    <div class="grid-row">
-                        <div class="grid-column span-one-third mt1">
-			    <img src="img/rna.png" alt="RNA Icon" width="50" height="50">
-                            <a href=""><h3>scGUI</h3></a>
-                            <p>Easily browse single cell RNA sequencing data using a Shiny web app</p>
-                        </div>
-                        <div class="grid-column span-one-third mt1" target="_blank" rel="noopener noreferrer">
-			    <img src="img/data.png" alt="Data Icon" width="50" height="50">
-                            <a href="https://powerqi.ethanm.cc" target="_blank" rel="noopener noreferrer"><h3>powerQI</h3></a>
-                            <p>Implement data-driven quality improvement for EMS providers</p>
-                        </div>
-                        <div class="grid-column span-one-third mt1">
-			    <img src="img/meter.png" alt="Meter Icon" width="50" height="50">
-                            <a href="https://github.com/ethan-mccarthy/EMS-Display" target="_blank" rel="noopener noreferrer"><h3>EMS Dashboard</h3></a>
-                            <p>Display relevent shift information to employees with a low-power E-ink display</p>
-                        </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
-                </section>
-
-                <hr>
-
-                <!-- Contact -->
-                <section class="align--center pt3 pb3">
-                    <p class="h3 mb2 reveal-on-scroll is-revealing">Contact Me</p>
-                    <a href="https://github.com/ethan-mccarthy" class="btn btn--outline reveal-on-scroll is-revealing" target="_blank" rel="noopener noreferrer">Github</a>
-                    <a href="mailto:ethanmc@ucla.edu" class="btn btn--outline reveal-on-scroll is-revealing">Email</a>
-                </section>
-
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
             </div>
-        </main>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-        <!-- Footer -->
-        <footer class="mt2 pb3 align--center">
-            <p class="mt1 small text--gray">Design by <a href="https://www.papayatemplates.com" class="link" target="_blank" rel="noopener noreferrer">Papaya</a>.</p>
-        </footer>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-    </div>
-    </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-    <!-- The compiled JavaScript file -->
-    <script src="js/production.js"></script>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-    </body>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+      </div>
+
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <a class="link-secondary socials" href="https://github.com/ethan-mccarthy" target="_blank" rel="noopener noreferrer">
+          <svg class="bi" width="1.25em" height="2em"><use xlink:href="#github"/></svg>
+        </a>
+        <a class="link-secondary socials" href="https://twitter.com/mccar_ethan" target="_blank" rel="noopener noreferrer">
+          <svg class="bi" width="1.25em" height="2em"><use xlink:href="#twitter"/></svg>
+        </a>
+        <a class="link-secondary socials" href="https://linkedin.com/in/ethan-m-866076b4" target="_blank" rel="noopener noreferrer">
+          <svg class="bi" width="1.25em" height="2em"><use xlink:href="#linkedin"/></svg>
+        </a>
+        <a class="link-secondary socials" href="mailto:ethanmc@ucla.edu">
+          <svg class="bi" width="1.25em" height="2em"><use xlink:href="#envelope"/></svg>
+        </a>
+      </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- This is the script import and initialization for the type animation -->
+    <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+    <script>
+      new TypeIt("#name-heading", {
+        strings: "Ethan McCarthy",
+        lifeLike: true
+      }).go();
+    </script>
+  </body>
 </html>
-
